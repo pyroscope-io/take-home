@@ -39,7 +39,7 @@ Even though it is pretty smart we found that at about 100,000,000 objects garbag
 
 The goal for this exercise is to find a way to reduce the number of objects that are allocated on the heap.
 
-You're can modify the main code (`main.go`) and the data structures as much as you'd like. The only constraint is that you have to implement `Insert` and `Iterate` methods — they are implemented in the reference implementation (`tree.go`) and provide simple ways to write to and read from profiling trees.
+You can modify the main code (`main.go`) and the data structures as much as you'd like. The only constraint is that you have to implement `Insert` and `Iterate` methods — they are implemented in the reference implementation (`tree.go`) and provide simple ways to write to and read from profiling trees.
 
 ### How to run the code
 
