@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"math/rand"
 	"runtime"
-	"time"
 )
 
 var random *rand.Rand
@@ -21,7 +20,6 @@ func benchmarkAllocations(cb func()) {
 	mAfter := runtime.MemStats{}
 	runtime.ReadMemStats(&mAfter)
 
-	fmt.Printf("  * garbage collection took: %s\n", time.Duration(mAfter.PauseTotalNs-mBefore.PauseTotalNs))
 	fmt.Printf("  * objects allocated: %d\n", mAfter.HeapObjects-mBefore.HeapObjects)
 }
 
